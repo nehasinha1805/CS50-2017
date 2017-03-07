@@ -1,0 +1,17 @@
+1.  stdint.h is a standard C library header file having fixed-width integer data types.
+2.  Using well-defined types like uint8_t, uint32_t, int32_t, and uint16_t makes the code far easier and safer to port independent of different platforms.
+3.  BYTE: 8 bits ie 1 byte,
+    DWORD: 32 bits ie 4 bytes,
+    LONG: 32 bits ie 4 bytes, and
+    WORD: 16 bits ie 2 bytes.
+4.  BM (0x424d) which is the file type i.e., bftype.
+5.  bfSize is the total number of bytes in the file.
+    biSize is the number of bytes in the info header ie 40 bytes.
+6.  If biHeight is negative, the bitmap is a top-down DIB with the origin at the upper left corner.
+7.  The biBitCount member of the BITMAPINFOHEADER structure determines the number of bits that define each pixel 
+    and the maximum number of colors in the bitmap.
+8.  fopen might return NULL value when there is no existing file (infile) to read or no file (outfile) created to write. 
+9.  Because fread will read the total number of bytes in BITMAPFILEHEADER or BITMAPINFOHEADER only one time.
+10. The value of padding will be 3 bytes if bi.biWidth is 3.
+11. fseek is used to change the location of the file pointer in a file.
+12. SEEK_CUR indicates the current position of the position pointer.
