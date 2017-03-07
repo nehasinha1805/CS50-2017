@@ -1,0 +1,19 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. JPEG supports 24-bit colors
+   GIF supports 8-bit colors 
+   PNG supports 8-bit color but also extends it to 24-bits
+   BMP supports 32 bit color
+1. GIF
+2. In lossy compression, some of the image information is lost forever while compressing the file, 
+   but in losless compresion, all the image information is recovered once the file is uncompressed.
+3. JPEG
+4. When a FAT file is deleted, the system modifies the filename’s first
+   character in the file’s directory entry to signal that the file
+   has been deleted and that the directory entry can be recycled; 
+   and the system moves all of the file’s FAT clusters to the hard drive’s list of free clusters. 
+   The actual filedata is never touched.
+5. Overwrite the hard disk's every addressable block with ASCII NULL bytes (zeroes).
